@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": 1,
   "Image": {
-    "Name": "soussoudesire/react-test",
+    "Name": "soussoudesire/react-prod",
     "Update": "true"
   },
   "Ports": [

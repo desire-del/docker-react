@@ -21,6 +21,8 @@ jobs:
       # Push container
       - name: Push container in Docker Hub
         run: docker push soussoudesire/react-test
+      - name: Create deployment package
+        run: zip -r deploy.zip Dockerrun.aws.json
       # Deploy to Elastic Beanstalk
       - name: Deploy to Beanstalk
         uses: einaregilsson/beanstalk-deploy@v21
